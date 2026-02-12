@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acadmy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="aadmy.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <section class="sub-header">
+<nav>
+    <a href="index.html"><img src="images/sar.png"></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="acadmy.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="coures.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<h1>Contact Us</h1>
+    </section>
+<!-- Contact us -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54735.19480865739!2d72.43668651455191!3d30.971886527779827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39230fcd3cedea4f%3A0xfe1c69fc6dc3525a!2sToba%20Tek%20Singh%2C%20Toba%20Tek%20Singh%20District%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1618822935056!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Pakistan,Punjab</h5>
+                    <p>Toba Tek Singh,Chak no 394 jb</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>03437748394</h5>
+                    <p>Monday to Saturday,4PM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>alazeemacadmy394@gmail.com</h5>
+                    <p>Email us to query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+<form action="formhandler.php" method="post">
+    <input type="text" name="name" placeholder="Enter Your Name" required>
+    <input type="email" name="gmail" placeholder="Enter Gmail address" required>
+    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+<textarea rows="8" name="message" placeholder="Message"></textarea>
+<button type="submit" class="hero-btn red-btn">Send Message</button>
+</form>
+
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur <br> elit Quas optio nemo velit veniam ea,<br> consequatur recusandae, cupiditate at quidem facilis molestias debitis similique. Explicabo!</p>
+<div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+</div>
+<p>Made with <i class="fa fa-heart-o"></i> By Maryam Azeem</p>
+</section>
+
+    <!-- javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
